@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Henry Kissinger",
+    "gravesite": "a",
+    "image": "henry-kissinger.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Ronald Reagan",
+    "gravesite": "Ronald Reagan Presidential Library and Museum",
+    "image": "ronald-reagan.jpg",
+    "tags": ["war monger", "USA", "president"],
+    "crimes": [
+      {
+        "title": "pip1",
+        "description": "THis man is pooo"
+      },
+      {
+        "title": "epi2",
+        "description": "This man is seriously poooooo"
+      }
+    ]
+  },
+  {
+    "name": "Margaret Thatcher",
+    "gravesite": "c",
+    "image": "margaret-thatcher.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "King Leopald",
+    "gravesite": "c",
+    "image": "king-leopald.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Napoleon Bonaparte",
+    "gravesite": "c",
+    "image": "napoleon-bonaparte.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Andrew Jackson",
+    "gravesite": "c",
+    "image": "andrew-jackson.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Woodrow Wilson",
+    "gravesite": "c",
+    "image": "woodrow-wilson.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Andrew Johnson",
+    "gravesite": "c",
+    "image": "andrew-johnson.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "George Washington",
+    "gravesite": "c",
+    "image": "george-washington.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "James Dole",
+    "gravesite": "Makawao Cementery",
+    "image": "james-dole.jpg",
+    "tags": [],
+    "crimes": []
+  },
+  {
+    "name": "Warren Delano Jr",
+    "gravesite": "c",
+    "image": "warren-delano-jr.jpg",
+    "tags": [],
+    "crimes": []
+  }
+]

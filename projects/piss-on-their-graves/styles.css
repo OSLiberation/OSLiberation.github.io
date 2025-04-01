@@ -1,0 +1,104 @@
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    grid-template-areas:
+      "search search search"
+      "main main main"
+      "main main main"
+      "main main main";
+  }
+  
+  .site-open {
+  }
+  
+  .site-closed {
+  }
+  
+  /* Search Area */
+  #search {
+    grid-area: search;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    grid-template-areas: "logo search-input";
+    gap: 0px 10px;
+    margin-left: 10px;
+  }
+  
+  #logo {
+    grid-area: logo;
+    background-color: white;
+  }
+  
+  #search-input {
+    grid-area: search-input;
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  #about-search {
+  }
+  
+  /* Main App Area */
+  #main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 90px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "details people";
+    overflow: hidden;
+  }
+  
+  #people {
+    grid-area: people;
+    overflow: scroll;
+  }
+  
+  #details {
+    grid-area: details;
+    overflow: scroll;
+    padding-left: 10px;
+  }
+  
+  #details h2 {
+    margin: 0 0 5px;
+  }
+  
+  #details h3,
+  h4 {
+    margin-bottom: 0;
+  }
+  
+  #details h4 {
+    margin-top: 0;
+  }
+  
+  #details p {
+    margin-top: 0;
+  }
+  #tag {
+    background-color: yellow;
+  }
+  
+  #tags .tag {
+    display: inline-block;
+    background-color: darkslategrey;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 2px;
+  }
+  
+  .person {
+    height: 70px;
+    width: 70px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    background-size: cover;
+    margin: 5px;
+  }
+  
