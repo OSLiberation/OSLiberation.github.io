@@ -1,104 +1,226 @@
+
 #root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-template-areas:
+    'search search search'
+    'main main main'
+    'main main main'
+    'main main main';
+}
+
+/* Search Area */
+#search {
+  grid-area: search;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 30px;
+  grid-template-areas: 'logo search-input';
+  gap: 0px 10px;
+  margin-left: 10px;
+}
+
+#logo {
+  grid-area: logo;
+  background-color: white;
+}
+
+#search-input {
+  grid-area: search-input;
+  margin-right: 10px;
+  width: auto;
+}
+
+#about-search {
+}
+
+/* Main App Area */
+#main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr 90px;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'details people';
+  overflow: hidden;
+}
+
+#people {
+  grid-area: people;
+  overflow: scroll;
+}
+
+#details {
+  grid-area: details;
+  overflow: scroll;
+  padding-left: 10px;
+}
+
+#details h2 {
+  margin: 0 0 5px;
+}
+
+#details h3,
+h4 {
+  margin-bottom: 0;
+}
+
+#details h4 {
+  margin-top: 0;
+}
+
+#details p {
+  margin-top: 0;
+}
+#tag {
+  background-color: yellow;
+}
+
+#tags .tag {
+  display: inline-block;
+  background-color: darkslategrey;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin: 2px;
+}
+
+.person {
+  height: 70px;
+  width: 70px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  background-size: cover;
+  margin: 5px;
+}
+
+@media screen and (max-device-width: 500px) {
+  #root {
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
     grid-template-areas:
-      "search search search"
-      "main main main"
-      "main main main"
-      "main main main";
+      'search search search'
+      'main main main'
+      'main main main'
+      'main main main';
   }
-  
-  .site-open {
-  }
-  
-  .site-closed {
-  }
-  
+
   /* Search Area */
   #search {
     grid-area: search;
     padding: 5px;
     display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: 30px;
-    grid-template-areas: "logo search-input";
+    grid-template-columns: 80px 1fr 150px;
+    grid-template-rows: 80px;
+    grid-template-areas: 'logo search-input';
     gap: 0px 10px;
     margin-left: 10px;
   }
-  
+
   #logo {
     grid-area: logo;
     background-color: white;
   }
-  
+
   #search-input {
     grid-area: search-input;
     margin-right: 10px;
     width: auto;
   }
-  
+
   #about-search {
   }
-  
+
   /* Main App Area */
   #main {
     display: grid;
     grid-area: main;
-    grid-template-columns: 1fr 90px;
+    grid-template-columns: 1fr 150px;
     grid-template-rows: 1fr;
-    grid-template-areas: "details people";
+    grid-template-areas: 'details people';
     overflow: hidden;
   }
-  
+
   #people {
     grid-area: people;
     overflow: scroll;
   }
-  
+
   #details {
     grid-area: details;
     overflow: scroll;
     padding-left: 10px;
   }
-  
+
   #details h2 {
     margin: 0 0 5px;
+    font-size: 40px;
   }
-  
+
   #details h3,
   h4 {
     margin-bottom: 0;
   }
-  
+
   #details h4 {
     margin-top: 0;
   }
-  
+
   #details p {
     margin-top: 0;
   }
   #tag {
     background-color: yellow;
   }
-  
+
   #tags .tag {
     display: inline-block;
     background-color: darkslategrey;
-    border-radius: 5px;
-    padding: 0 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 5px;
     margin: 2px;
   }
-  
+
+  /* Gravesite*/
+  #gravesite {
+    margin-top:10px;
+    font-size: 30px;
+  }
+
+  #gravesite .divider {
+    border: 2px solid white;
+  }
+
+  #crimes {
+    font-size: 35px;
+  }
+
+  #crimes .title {
+    font-size: 30px;
+  }
+
+  #crimes .description {
+    font-size: 25px;
+  }
+
   .person {
-    height: 70px;
-    width: 70px;
+    height: 150px;
+    width: 150px;
     border: 1px solid white;
     border-radius: 5px;
     display: inline-block;
     background-size: cover;
     margin: 5px;
   }
-  
+}
